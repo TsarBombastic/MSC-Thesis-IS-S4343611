@@ -2,7 +2,7 @@
 
 In this repository, you will find two notebooks designed to work sequentially:
 - scraper.ipynb: Scrapes story text and metadata from Archive of Our Own (AO3).
-- DeepSeek_Annotator.ipynb: Annotates the explicitness and focalization of scraped stories using the DeepSeek LLM API.
+- DeepSeek_Annotator.ipynb: Annotates the explicitness and focalization of fanfiction using the DeepSeek LLM API.
 
 # INSTRUCTIONS
 
