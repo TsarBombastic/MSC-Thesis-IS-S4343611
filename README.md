@@ -7,11 +7,11 @@ In this repository, you will find two notebooks designed to work sequentially:
 # INSTRUCTIONS
 
 # Prerequisites
-- A Google account (if using Google Colab) or a local Jupyter/Anaconda environment.
+- A Google account (if using Google Colab) or a local Jupyter/Anaconda environment*.
 - An active DeepSeek API Key.
 
 # Running scraper.ipynb
-1. Load the notebook in Google Colab or Jupyter Notebook.
+1. Load the notebook in Google Colab or Jupyter Notebook*.
 2. Configure Settings: 
    - Use the Configuration cell.
    - Set USE_EXCEL_INPUT = True if you want to scrape specific URLs from an Excel file. Make sure to upload your .xlsx file and define EXCEL_FILE_PATH (the path to the .xlsx file) and COLUMN_NAME (the column in which the URLs are present).
@@ -29,6 +29,7 @@ In this repository, you will find two notebooks designed to work sequentially:
 6. Once processing is complete, download output.csv to view the annotated results.
 
 # NOTES
-- Do not remove the time.sleep(10) function in the scraper. AO3 enforces strict rate limits, and scraping too quickly will result in a broken connection (Error 429). In addition to this, altering the search query to show results in descending order of Kudos might also cause a broken connection.
+- *These files have been run on Google Colab during of the thesis, they should be able to run on Jupyter Notebook as well, but I have not checked if changes are needed to the code.
+- Do not remove the time.sleep(10) function in the scraper. AO3 enforces strict rate limits, and scraping too quickly will result in a broken connection. In addition to this, altering the search query to show results in descending order of Kudos might also cause a broken connection.
 - If using Google Colab, remember that downloaded or processed files will be deleted once the runtime disconnects. Always download data.zip and output.csv immediately after the scripts finish running. If scraping a great amount of works, you also might run up against the maximum run time of a session.
-- The annotator notebook contains a fallback `try/except` block to catch instances where the LLM fails to return strict JSON. These will be marked as "Error" in the resulting CSV. If this happens, you can manually set the annotated values in the .csv file.
+- The annotator notebook contains a fallback try/except block to catch instances where the LLM fails to return strict JSON. These will be marked as "Error" in the resulting CSV. If this happens, you can manually set the annotated values in the .csv file.
