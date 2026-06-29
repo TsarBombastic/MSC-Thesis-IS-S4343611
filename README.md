@@ -21,7 +21,7 @@ In this repository, you will find two notebooks designed to work sequentially:
 
 # Running DeepSeek_Annotator.ipynb
 1. Ensure you have the data.zip file (or a folder of .txt files) generated from the scraper. 
-2. Load DeepSeek_Annotator.ipynb in Colab or Jupyter.
+2. Load DeepSeek_Annotator.ipynb in Colab or Jupyter*.
 3. If using Colab, upload data.zip and the metadata CSV to the runtime environment.
 4. - Locate the client = OpenAI(...) setup in the code.
    - Replace 'API-KEY' with your active DeepSeek API key.
