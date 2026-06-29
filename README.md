@@ -1,4 +1,4 @@
-# AO3 Scraper & DeepSeek Annotator &  BERToptic Topic Modeler
+# AO3 Scraper, DeepSeek Annotator, and  BERToptic Topic Modeler
 
 In this repository, you will find three notebooks designed to work sequentially:
 - scraper.ipynb: Scrapes story text and metadata from Archive of Our Own (AO3).
